@@ -6,10 +6,12 @@ To be able to run this program you should be aware if you have these files:
   -funcoes.h
   -funcoes.c
   -main.c
+  -funcoes.o
+  -main.o
   -makefile
   -main.exe
   
-  If you dont have one of this file you should look if you did not delete any file. In case you dont have the file main.exe just open your terminal and type "make".
+  If you dont have one of this file you should look if you did not delete any file. In case you dont have the files .o just open your terminal and type "make".
   
 If you have all files or you typed "make" in your terminal, just type "./main.exe" and our program will start!
 
