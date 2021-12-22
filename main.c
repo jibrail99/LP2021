@@ -1,3 +1,12 @@
+/** 
+ * version 0.3
+ * This versions contains some improvements on the main menu and at some functions 
+ * Added a clean function to avoid what i call "bitcoin mining" 
+ * (infinite loop of text)
+ * That functions cleans the stdin when the user press a letter instead a number 
+ * Also the function "multiplicacao" has been fixed. It was showing 0  all the time (example 8^20 = 0, which is false)
+ */
+
 #include "funcoes.h"
 #include <stdio.h>
 #include <stdlib.h>
@@ -16,6 +25,7 @@ int main()
     escreve(arr);
     //Processo de validação do vetor
     printf("\n");
+    printf("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n");
     printf("Tem a certeza que quer este vetor? \n1 - Sim\n2 - Não\n");
     printf("\n");
     scanf("%d", &confirmararray);
@@ -27,6 +37,7 @@ int main()
     }
     else if (confirmararray == 1)
     {
+        printf("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n");
         printf("Vetor validado com sucesso! \n");
         printf("\n");
     }
@@ -48,6 +59,8 @@ int main()
     }
 
     //Processo de construção do menu de opções
+    printf("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n");
+    printf("Escolha a função que pretende executar: \n");
     printf("1 - Cálculo da multiplicação de todos os elementos no vetor\n");
     printf("2 - Devolução do vetor ordenado por ordem crescente\n");
     printf("3 - Cálculo do seno (sin) de todos os elementos no vetor\n");
@@ -89,6 +102,7 @@ int main()
             case 7:
                 printf("\n");
                 printf("Obrigado por usar o nosso programa! \n");
+                printf("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n");
                 return 0;
             default:
                 break;
