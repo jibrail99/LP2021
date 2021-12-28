@@ -1,11 +1,12 @@
 /** 
- * version 0.3
- * This versions contains some improvements on the main menu and at some functions 
- * Added a clean function to avoid what i call "bitcoin mining" 
- * (infinite loop of text)
- * That functions cleans the stdin when the user press a letter instead a number 
- * Also the function "multiplicacao" has been fixed. It was showing 0  all the time (example 8^20 = 0, which is false)
+ * version 0.4
+ * Introducing another new functions ("devolvenumero" and "minimodovetor")
+ * "devolvenumero" returns the values of your vector that are greater than two and divisible by five
+ * "minimodovetor" finds the lowest number in your vector
+ * Updated "Makefile" file to run programs using math.c
+ * Minor bugs fixed
  */
+
 
 #include "funcoes.h"
 #include <stdio.h>
@@ -17,7 +18,7 @@
 
 int main()
 {
-
+  
     //Processo de leitura e escrita do array
     int arr[N], confirmararray, escolher;
     int enter;
@@ -95,9 +96,11 @@ int main()
                 break;
             case 5:
                 //função devolução dos valores maisores que 2 e divisiveis por 5
+                devolvenumero (arr);
                 break;
             case 6:
-                //função minimo
+                minimodovetor (arr);
+                
                 break;
             case 7:
                 printf("\n");

@@ -1,6 +1,3 @@
-/** As we said in main.c, we had to create a cleaning function (limpaInput)
- * Also if you go to the function "multiplicação" you will see some things modified!
- */
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -92,4 +89,36 @@ void ordemcrescente(int v[N]) //ordenação do vetor por ordem crescente
     {
         printf("%d ", v[i]);
     }
+}
+
+void devolvenumero(int v[N]) //funcao que devolve numero maior que 2 e que seja divisivel por 5
+{
+    printf("Os números que são maiores que 2 e divisiveis por 5 são:");
+    int i;
+    for (i = 0; i < N; i++)
+    {
+        if (v[i] > 2)
+        {
+            if (v[i] % 5 == 0)
+            {
+
+                printf("%d\t", v[i]);
+            }
+        }
+    }
+}
+
+void minimodovetor(int v[N]) //funçao que revela o valor minimo do vetor
+{
+    
+    int i = 0;
+    int minimo = v[0];
+
+    for (i = 1; i < N; i++)
+    {
+        if (v[i] < minimo)
+            minimo = v[i];
+    }
+    printf("O valor minimo do vetor é: %d\n", minimo);
+    
 }

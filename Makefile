@@ -4,7 +4,7 @@ all: programa.exe
 	clean : rm *.o
 
 programa.exe : main.o funcoes.o
-	gcc -o main.exe main.o funcoes.o
+	gcc -o main.exe main.o funcoes.o -lm
 
 funcoes.o: funcoes.c
 	gcc -c funcoes.c
