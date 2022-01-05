@@ -7,3 +7,6 @@ void ordemcrescente (int v[N]);
 void multiplicacao (int v[N]);
 void devolvenumero (int v[N]);
 void minimodovetor (int v[N]);
+
+void vetorsin (int v[N]);
+void matriz (int v[N]);
