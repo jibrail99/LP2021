@@ -89,10 +89,10 @@ int main()
                 ordemcrescente(arr);
                 break;
             case 3:
-                //funcão calculo seno
+                vetorsin(arr);
                 break;
             case 4:
-                //função construção matriz
+                matriz(arr);
                 break;
             case 5:
                 //função devolução dos valores maisores que 2 e divisiveis por 5
