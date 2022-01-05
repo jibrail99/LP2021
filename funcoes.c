@@ -122,3 +122,23 @@ void minimodovetor(int v[N]) //funçao que revela o valor minimo do vetor
     printf("O valor minimo do vetor é: %d\n", minimo);
     
 }
+
+
+void vetorsin(int v[N]){
+	for (int i=0; i<20; i++){
+		printf("Posicao %i: %f\n",(i+1),sin((v[i])));};
+}
+
+void matriz(int v[N]){
+	//1 linha
+	for(int i=0;i<20;i++) printf("%i  ",v[i]);
+	printf("\n");
+	//proximas linhas
+	for(int l=1;l<20;l++){
+		//colunas
+		for(int c=0; c<20;c++){	
+				printf("%i  ",v[rand() % 20]);
+		}
+		printf("\n");
+	}
+	}
