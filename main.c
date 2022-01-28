@@ -6,9 +6,12 @@
 
 #define N 20
 
-int main()
+int main(int argc, char *argv[])
 {
-  
+	if(argc==2){
+  if (strcmp(argv[1],"--help")==0) {printf("\nEste programa serve para realizar estudos com um vetor dado. Depois de pedir um vetor, o programa irá disponibilizar varias funcoes para uso do utilizador. O programa ainda tem uma pequena pagina de ajuda para ver um resumo do que cada funcao faz.\n"); return 0;}} //descricao do programa para a funcionalidade --help
+  	//o if inicial serve para verificar o numero de argumentos que a funcao recebeu ao ser executada, se recebeu 1, ira compara-la com a string --help e se for igual, ira escrever a descricao da funcao, se for 2 ou mais (ou 0), a funcao ira ignorar o help e seguir imediatamente para a funcao principal atraves do else que comeca aqui e vai ate ao fim do programa
+  	else {
     //Processo de leitura e escrita do array
     int arr[N], confirmararray, escolher=12;
     
@@ -26,7 +29,7 @@ int main()
     if (confirmararray == 0 || confirmararray > 2)
     {
         printf("Erro, o programa vai voltar ao inicio!\n");
-        return main();
+        return main(argc,argv);
     }
     else if (confirmararray == 1)
     {
@@ -198,6 +201,7 @@ int main()
                 return 0;
             default:
                 break;
+            }
             }
         }
     }
